@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container p-3">
+        <h1 id="title" class="text-center">Restaurant Evaluation Survey</h1>
+        <p id="description" class="text-center">Please let us know how was the food and service</p>
+
+
+        <form id="survey-form">
+            <div class="form-group w-50 mx-auto">
+                <label for="name" class="text-center" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required>
+
+            </div>
+            <div class="form-group w-50 mx-auto">
+                <label for="email" class="text-center" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your email"
+                    required>
+
+            </div>
+            <div class="form-group w-50 mx-auto">
+                <label for="number" class="text-center" id="number-label">Age</label>
+                <input id="number" type="number" class="form-control" minlength="10" maxlength="100" min="10" max="999"
+                    required placeholder="Enter Your Age">
+                <div class="btn-group my-2" data-toggle="buttons">
+                    <div>
+                        <h3>Which type of food you like most ?</h3>
+                    </div>
+                    <label class="btn mx-3  btn-sm btn-primary active">Sweet
+                        <input type="radio" name="ff" id="" autocomplete="off" value="Sweet">
+                    </label>
+                    <label class="btn mx-3 btn-sm btn-primary">Spicy
+                        <input type="radio" name="ff" id="" autocomplete="off" value="picy">
+                    </label>
+                </div><br>
+                <hr><br>
+
+
+                <h3>Quality of Food:</h3>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="Excellent" value="Excellent" id=""
+                            value="checkedValue" checked>
+                        Excellent
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="Good" name="Good" id=""
+                            value="checkedValue">
+                        Good
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="Fair" name="Fair" id=""
+                            value="checkedValue">
+                        Fair
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="Poor" name="Poor" id=""
+                            value="checkedValue">
+                        Poor
+                    </label>
+                </div>
+
+                <br>
+                <hr><br>
+                <div class="form-group">
+                    <h3>what are the two area which you think are the most important in Restaurant ?</h3>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Food</option>
+                        <option value="student">Service</option>
+                        <option value="job">Ambience</option>
+                        <option value="learner">Music</option>
+                        <option value="preferNo">Staff Behavior</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for=""></label>
+
+
+                </div>
+                <div class="form-group">
+                    <label for="">Any comments, questions or suggestions?</label>
+                    <textarea class="form-control" name="text-area" id="" rows="5" placeholder="Description"></textarea>
+                </div><small id="helpId" class="text-muted">Thank You</small>
+
+                <br> <button type="submit" id="submit" class="btn mr-auto btn-primary btn-lg">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+<!-- paste all code in this link-----  https://codepen.io/freeCodeCamp/pen/MJjpwO---------- -->
+
+</html>
